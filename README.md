@@ -1,5 +1,11 @@
 The Token Auth API allows applications to obtain a new token. 
 
+# Guidelines
+
+* Access tokens do not expire. It's therefore unnecessary to retreive new tokens on each hit. 
+* If there is a need to refresh the access token, there is no harm in doing so.
+* There is a rate limit of 10 requests per minute on the `/authenticate` endpoint.
+
 
 # General usage
 
@@ -36,10 +42,7 @@ Date: Mon, 24 Apr 2017 19:35:03 GMT
 * Status 401: Either the token_id or token_secret aren't valid. 
 
 
-# Using Curl
+# Examples
 
-`curl -H "Content-Type: application/json" -X POST -d '{"token_id":"mytokenid","token_secret":"mytokensecret"}' https://token-api.pub.worximity.net/authenticate`
-
-# Using Node
-
-[Node](nodejs.md)
+* [Node](javascript/README.md)
+* [Command Line](cmd/README.md)

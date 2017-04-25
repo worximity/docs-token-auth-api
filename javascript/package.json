@@ -1,0 +1,15 @@
+{
+  "name": "doc-token-auth-api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "no-deps": "node ./example-nodeps.js",
+    "with-fetch": "node ./example-fetch.js"
+  },
+  "engines": {
+    "node": ">=6.6.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
