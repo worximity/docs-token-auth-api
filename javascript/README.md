@@ -7,7 +7,8 @@ The examples use NodeJS > 6.6.0. To execute the examples:
 
 For example:
 ```
-$ cd javascript
+$ git clone git@github.com:worximity/docs-token-auth-api.git
+$ cd docs-token-auth-api/javascript
 $ npm install
 $ export TOKEN_ID=mytokenid
 $ export TOKEN_SECRET=mytokensecret

@@ -6,7 +6,6 @@ The Token Auth API allows applications to obtain a new token.
 * If there is a need to refresh the access token, there is no harm in doing so.
 * There is a rate limit of 10 requests per minute on the `/authenticate` endpoint.
 
-
 # General usage
 
 For applications that need to authenticate using a token, it can be obtained by issuing a request on the `/authenticate` endpoint. The endpoint returns a token which can then be used to authenticate againgst other services. 
@@ -44,5 +43,5 @@ Date: Mon, 24 Apr 2017 19:35:03 GMT
 
 # Examples
 
-* [Node](javascript/README.md)
-* [Command Line](cmd/README.md)
+* [Node](javascript/)
+* [Command Line](cmd/)
