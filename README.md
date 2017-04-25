@@ -30,7 +30,7 @@ Date: Mon, 24 Apr 2017 19:35:03 GMT
 * The request includes a JSON payload in which has both the token_id and token_secret properties. 
 * The response includes an access_token value which can then be used with other services.
 
-### Possible resonses
+### Possible responses
 
 * Status 200: All good. The response will include a JSON payload containing a new access_token
 * Status 401: Either the token_id or token_secret aren't valid. 
@@ -39,3 +39,7 @@ Date: Mon, 24 Apr 2017 19:35:03 GMT
 # Using Curl
 
 `curl -H "Content-Type: application/json" -X POST -d '{"token_id":"mytokenid","token_secret":"mytokensecret"}' https://token-api.pub.worximity.net/authenticate`
+
+# Using Node
+
+[Node](nodejs.md)
